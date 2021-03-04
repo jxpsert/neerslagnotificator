@@ -1,0 +1,46 @@
+@font-face {
+
+    font-family: 'custom';
+    src: url(font.ttf);
+}
+body {
+    margin-top: 0;
+    font-family: custom;
+    background-image: url("achtegrond.jpg");
+    background-size: 125%;
+    background-repeat: no-repeat;
+}
+
+#middenvak {
+    color: #263b87;
+    background-color: white;
+    width: 450px;
+    height: 650px;
+    padding: 15px;
+    border-radius: 5;
+    border-color: #263b87;
+    border-style: solid;
+}
+
+#header {
+    color: #263b87;
+    background-color: white;
+    width: 450px;
+    height: 125px;
+    padding: 15px;
+    border-radius: 5;
+    border-color: #263b87;
+    border-style: solid;
+}
+
+#map {
+    border-radius: 5;
+    border-color: #263b87;
+    border-style: solid;
+}
+
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  } 
+

@@ -1,0 +1,47 @@
+@font-face {
+
+    font-family: 'custom';
+    src: url(font.ttf) format('truetype'),
+        url(font.woff) format('woff'),
+        url(font.woff2) format('woff2'),
+        url(font.eot) format('embedded-opentype');
+}
+
+body {
+    margin-top: 0;
+    font-family: custom;
+    background-color: grey;
+}
+
+#middenvak {
+    color: #263b87;
+    background-color: white;
+    width: 300px;
+    height: 508px;
+    padding: 15px;
+    border-radius: 5;
+    border-color: #263b87;
+    border-style: solid;
+}
+
+#header {
+    color: #263b87;
+    background-color: white;
+    width: 300px;
+    height: 90px;
+    padding: 15px;
+    border-radius: 5;
+    border-color: #263b87;
+    border-style: solid;
+}
+
+#map {
+    border-radius: 5;
+    border-color: #263b87;
+    border-style: solid;
+}
+
+@viewport {
+    width: device-width ;
+  } 
+

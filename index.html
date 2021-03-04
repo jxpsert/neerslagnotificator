@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>KNMI - Neerslagnotificator</title>
+    <meta charset="UTF-8">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Neerslagnotificator" />
+    <meta property="og:description" content="Jouw lokale weersomstandigheden" />
+    <meta property="og:url" content="https://www.jasperp.nl/nn/index.html" />
+    <meta property="og:image" content="https://www.jasperp.nl/nn/icon.png" />
+    <meta name="description" content="Neerslagnotificator; jouw lokale weersomstandigheden.">
+    <meta name="keywords" content="neerslag,notificator,neerslagnotificator,jasperp">
+    <meta name="author" content="Jasper Platenburg">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="icon" type="image/png" href="rovh2.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        
+        if (screen.width <= 800) {
+        document.location = "https://jasperp.nl/nn/mobile/index.html";
+        }
+        
+        </script>
+    <script type="text/javascript" src="instruct_buienradarLibrary_20200106.js"></script>
+    <script type="text/javascript">
+        function showWeatherInfo() {
+          currentLocation_stationDescription("voorspelling");
+            currentLocation_cityName("loc");
+            date_showDate("datum");
+            currentLocation_temperature("temp");
+            buienradar_map("map");
+            currentLocation_stationIconUrl("icon");
+            date_showTime("tijd")
+			toonNeerslagGrafiek("grafiek");
+        }
+      </script>
+</head>
+<body onload="loadBuienradarData(); getLocation();">
+    <a href="https://www.knmi.nl/home"><img src="rovh.png" width="325px" align="left" style="margin-top: 0px;"></a>
+        <center>
+    <br>
+<div id="header">
+    <img src="https://jasperp.nl/nn/logo.png" width="425px">
+
+</div>
+<br><br>
+    <div id="middenvak">
+        <br>
+        <h1 style="display: inline;" id="loc">...</h1><p style="display: inline;">     </p><img id="icon" style="display: inline;">
+        <h5 id="datum">...</h5>
+        <h2 id="temp" style="display: inline;">...</h2> <h2 style="display: inline;"> C°</h2>
+        <p id="voorspelling">...</p>
+        <img id="map" width="425px"></img>
+</center>
+</body>
